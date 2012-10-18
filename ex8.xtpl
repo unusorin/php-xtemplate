@@ -1,0 +1,24 @@
+<!-- BEGIN: main -->
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>XTemplate Table Row Example</title>
+</head>
+<!-- $HeadURL: https://xtpl.svn.sourceforge.net/svnroot/xtpl/trunk/ex8.xtpl $
+$Id: ex8.xtpl 21 2007-05-29 18:01:15Z cocomp $ -->
+<body bgcolor="#FFFFFF" text="#000000" link="#FF9966" vlink="#FF9966" alink="#FFCC99">
+<!-- BEGIN: table -->
+<table border="1" summary="XTemplate Table Row Example">
+   <!-- BEGIN: row -->
+   <tr>
+      <!-- BEGIN: cell -->
+      <td>{stuff.item#my comment}</td>
+      <!-- END: cell -->
+   </tr>
+   <!-- END: row -->
+</table>
+<!-- END: table -->
+</body>
+</html>
+<!-- END: main -->

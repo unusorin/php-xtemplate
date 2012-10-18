@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class CachingXTemplate</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class CachingXTemplate</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">CachingXTemplate  Extension to XTemplate to provide block level and whole template caching facilities  Needs Web server writable directory</p>
+	<ul class="tags">
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">copyright:</span> Jeremy Coates / Co-Comp Ltd 2006-2007</li>
+				<li><span class="field">author:</span> Jeremy Coates [cocomp@users.sourceforge.net]</li>
+				<li><span class="field">see:</span> license.txt BSD license</li>
+				<li><span class="field">since:</span> PHP 5</li>
+				<li><span class="field">version:</span> $Id: caching_xtemplate.class.php 21 2007-05-29 18:01:15Z cocomp $</li>
+				<li><span class="field">link:</span> $HeadURL:</li>
+				<li><span class="field">uses:</span> <a href="../../XTemplate/XTemplate.html#methodXTemplate">XTemplate::XTemplate()</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_xtpl_caching_xtemplate_class_php.html">/caching_xtemplate.class.php</a> (line <span class="field"><a href="../..//__filesource/fsource_XTemplate_CachingXTemplate_caching_xtemplate.class.php.html#a30">30</a></span>)
+		</p>
+		
+				
+		<pre><a href="../../XTemplate/XTemplate.html">XTemplate</a>
+   |
+   --CachingXTemplate</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$cache_dir" title="details" class="var-name">$cache_dir</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$cache_expiry" title="details" class="var-name">$cache_expiry</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$cache_ext" title="details" class="var-name">$cache_ext</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$cache_unique" title="details" class="var-name">$cache_unique</a>
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+								
+				<div class="method-definition">
+											<span class="method-result">CachingXTemplate</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$tpldir</span> = <span class="var-default">''</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$files</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$mainblock</span> = <span class="var-default">'main'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$autosetup</span> = <span class="var-default">true</span>], <span class="var-type">int</span>&nbsp;<span class="var-name">$cache_expiry</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$cache_unique</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$cache_dir</span> = <span class="var-default">'./xcache'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$cache_ext</span> = <span class="var-default">'.xcache'</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#assign" title="details" class="method-name">assign</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$val</span> = <span class="var-default">''</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$magic_quotes</span> = <span class="var-default">false</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#assign_file" title="details" class="method-name">assign_file</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$val</span> = <span class="var-default">''</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#parse" title="details" class="method-name">parse</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$cache_expiry</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#read_block_cache" title="details" class="method-name">read_block_cache</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span>, <span class="var-type">ing</span>&nbsp;<span class="var-name">$cache_expiry</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#read_template_cache" title="details" class="method-name">read_template_cache</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#restart" title="details" class="method-name">restart</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$tpldir</span> = <span class="var-default">''</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$files</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$mainblock</span> = <span class="var-default">'main'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$autosetup</span> = <span class="var-default">true</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$tag_start</span> = <span class="var-default">'{'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$tag_end</span> = <span class="var-default">'}'</span>], <span class="var-type">int</span>&nbsp;<span class="var-name">$cache_expiry</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$cache_unique</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$cache_dir</span> = <span class="var-default">'./xcache'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$cache_ext</span> = <span class="var-default">'.xcache'</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#text" title="details" class="method-name">text</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span> = <span class="var-default">''</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#write_block_cache" title="details" class="method-name">write_block_cache</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$cache_expiry</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#write_template_cache" title="details" class="method-name">write_template_cache</a>
+										()
+									</div>
+							</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$cache_dir" id="$cache_dir"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$cache_dir</span>
+			 = <span class="var-default"> './xcache'</span>			(line <span class="line-number"><a href="../..//__filesource/fsource_XTemplate_CachingXTemplate_caching_xtemplate.class.php.html#a66">66</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Path to cache dir  Needs to be writable by webserver</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">example:</span> example not found</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$cache_expiry" id="$cache_expiry"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$cache_expiry</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number"><a href="../..//__filesource/fsource_XTemplate_CachingXTemplate_caching_xtemplate.class.php.html#a38">38</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Cache expiry time (seconds)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$cache_ext" id="$cache_ext"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$cache_ext</span>
+			 = <span class="var-default"> '.xcache'</span>			(line <span class="line-number"><a href="../..//__filesource/fsource_XTemplate_CachingXTemplate_caching_xtemplate.class.php.html#a56">56</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Filename extension</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">example:</span> example not found</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$cache_unique" id="$cache_unique"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$cache_unique</span>
+			 = <span class="var-default"> 'unique'</span>			(line <span class="line-number"><a href="../..//__filesource/fsource_XTemplate_CachingXTemplate_caching_xtemplate.class.php.html#a47">47</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Cache file unique identifier</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">example:</span> example not found</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../../XTemplate/XTemplate.html">XTemplate</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$blocks">XTemplate::$blocks</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$block_end_delim">XTemplate::$block_end_delim</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$block_end_word">XTemplate::$block_end_word</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$block_parse_order">XTemplate::$block_parse_order</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$block_start_delim">XTemplate::$block_start_delim</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$block_start_word">XTemplate::$block_start_word</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$comment_preg">XTemplate::$comment_preg</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$debug">XTemplate::$debug</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$filecache">XTemplate::$filecache</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$filecontents">XTemplate::$filecontents</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$filename">XTemplate::$filename</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$files">XTemplate::$files</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$filevars">XTemplate::$filevars</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$filevar_delim">XTemplate::$filevar_delim</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$filevar_delim_nl">XTemplate::$filevar_delim_nl</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$filevar_parent">XTemplate::$filevar_parent</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$file_delim">XTemplate::$file_delim</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$mainblock">XTemplate::$mainblock</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$output_type">XTemplate::$output_type</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$parsed_blocks">XTemplate::$parsed_blocks</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$preparsed_blocks">XTemplate::$preparsed_blocks</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$sub_blocks">XTemplate::$sub_blocks</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$tag_end_delim">XTemplate::$tag_end_delim</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$tag_start_delim">XTemplate::$tag_start_delim</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$tpldir">XTemplate::$tpldir</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$vars">XTemplate::$vars</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$_autoreset">XTemplate::$_autoreset</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$_error">XTemplate::$_error</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$_ignore_missing_blocks">XTemplate::$_ignore_missing_blocks</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$_null_block">XTemplate::$_null_block</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../XTemplate/XTemplate.html#var$_null_string">XTemplate::$_null_string</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../..//__filesource/fsource_XTemplate_CachingXTemplate_caching_xtemplate.class.php.html#a106">106</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Override of parent constructor</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">CachingXTemplate</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$tpldir</span> = <span class="var-default">''</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$files</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$mainblock</span> = <span class="var-default">'main'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$autosetup</span> = <span class="var-default">true</span>], <span class="var-type">int</span>&nbsp;<span class="var-name">$cache_expiry</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$cache_unique</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$cache_dir</span> = <span class="var-default">'./xcache'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$cache_ext</span> = <span class="var-default">'.xcache'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$file</span><span class="var-description">: Template file to work on</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$tpldir</span><span class="var-description">: Location of template files (useful for keeping files outside web server root)</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$files</span><span class="var-description">: Filenames lookup</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mainblock</span><span class="var-description">: Name of main block in the template</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$autosetup</span><span class="var-description">: If true, run setup() as part of constuctor</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$cache_expiry</span><span class="var-description">: Seconds to cache for</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cache_unique</span><span class="var-description">: Unique file id (e.g. session_id())</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cache_dir</span><span class="var-description">: Cache folder</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cache_ext</span><span class="var-description">: Cache file extension</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../XTemplate/XTemplate.html#method__construct">XTemplate::__construct()</a></dt>
+						<dd>PHP 5 Constructor - Instantiate the object</dd>
+					</dl>
+		
+	</div>
+<a name="methodassign" id="assign"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">assign</span> (line <span class="line-number"><a href="../..//__filesource/fsource_XTemplate_CachingXTemplate_caching_xtemplate.class.php.html#a172">172</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Override of parent assign method</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			assign
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$val</span> = <span class="var-default">''</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$magic_quotes</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Variable to assign $val to</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$magic_quotes</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$val</span><span class="var-description">: / array $val Value to assign to $name</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../XTemplate/XTemplate.html#methodassign">XTemplate::assign()</a></dt>
+						<dd>assign a variable</dd>
+					</dl>
+		
+	</div>
+<a name="methodassign_file" id="assign_file"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">assign_file</span> (line <span class="line-number"><a href="../..//__filesource/fsource_XTemplate_CachingXTemplate_caching_xtemplate.class.php.html#a186">186</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Override of parent assign_file method</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			assign_file
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$val</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Variable to assign $val to</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$val</span><span class="var-description">: / array $val Values to assign to $name</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../XTemplate/XTemplate.html#methodassign_file">XTemplate::assign_file()</a></dt>
+						<dd>assign a file variable</dd>
+					</dl>
+		
+	</div>
+<a name="methodparse" id="parse"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">parse</span> (line <span class="line-number"><a href="../..//__filesource/fsource_XTemplate_CachingXTemplate_caching_xtemplate.class.php.html#a200">200</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Override of parent parse method</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			parse
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$cache_expiry</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$bname</span><span class="var-description">: Block name to parse</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$cache_expiry</span><span class="var-description">: Seconds to cache block for</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../XTemplate/XTemplate.html#methodparse">XTemplate::parse()</a></dt>
+						<dd>parse a block</dd>
+					</dl>
+		
+	</div>
+<a name="methodread_block_cache" id="read_block_cache"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">read_block_cache</span> (line <span class="line-number"><a href="../..//__filesource/fsource_XTemplate_CachingXTemplate_caching_xtemplate.class.php.html#a306">306</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Read block level cache file</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			read_block_cache
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span>, <span class="var-type">ing</span>&nbsp;<span class="var-name">$cache_expiry</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$bname</span><span class="var-description">: Block name to read from cache</span>			</li>
+					<li>
+				<span class="var-type">ing</span>
+				<span class="var-name">$cache_expiry</span><span class="var-description">: Seconds to cache block for</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodread_template_cache" id="read_template_cache"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">read_template_cache</span> (line <span class="line-number"><a href="../..//__filesource/fsource_XTemplate_CachingXTemplate_caching_xtemplate.class.php.html#a254">254</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Read whole template cache file</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			read_template_cache
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodrestart" id="restart"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">restart</span> (line <span class="line-number"><a href="../..//__filesource/fsource_XTemplate_CachingXTemplate_caching_xtemplate.class.php.html#a128">128</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Override of parent restart method</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			restart
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$tpldir</span> = <span class="var-default">''</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$files</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$mainblock</span> = <span class="var-default">'main'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$autosetup</span> = <span class="var-default">true</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$tag_start</span> = <span class="var-default">'{'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$tag_end</span> = <span class="var-default">'}'</span>], <span class="var-type">int</span>&nbsp;<span class="var-name">$cache_expiry</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$cache_unique</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$cache_dir</span> = <span class="var-default">'./xcache'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$cache_ext</span> = <span class="var-default">'.xcache'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$file</span><span class="var-description">: Template file to work on</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$tpldir</span><span class="var-description">: Location of template files</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$files</span><span class="var-description">: Filenames lookup</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mainblock</span><span class="var-description">: Name of main block in the template</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$autosetup</span><span class="var-description">: If true, run setup() as part of restarting</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$tag_start</span><span class="var-description">: {</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$tag_end</span><span class="var-description">: }</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$cache_expiry</span><span class="var-description">: Seconds to cache for</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cache_unique</span><span class="var-description">: Unique file id (e.g. session_id())</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cache_dir</span><span class="var-description">: Cache folder</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cache_ext</span><span class="var-description">: Cache file extension</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../XTemplate/XTemplate.html#methodrestart">XTemplate::restart()</a></dt>
+						<dd>Restart the class - allows one instantiation with several files processed by restarting</dd>
+					</dl>
+		
+	</div>
+<a name="methodtext" id="text"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">text</span> (line <span class="line-number"><a href="../..//__filesource/fsource_XTemplate_CachingXTemplate_caching_xtemplate.class.php.html#a220">220</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Override of parent text method</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			text
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$bname</span><span class="var-description">: Block name to return</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../XTemplate/XTemplate.html#methodtext">XTemplate::text()</a></dt>
+						<dd>returns the parsed text for a block</dd>
+					</dl>
+		
+	</div>
+<a name="methodwrite_block_cache" id="write_block_cache"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">write_block_cache</span> (line <span class="line-number"><a href="../..//__filesource/fsource_XTemplate_CachingXTemplate_caching_xtemplate.class.php.html#a346">346</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Write out block level cache file</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			write_block_cache
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$cache_expiry</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$bname</span><span class="var-description">: Block name to cache</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$cache_expiry</span><span class="var-description">: Seconds to cache block for</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodwrite_template_cache" id="write_template_cache"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">write_template_cache</span> (line <span class="line-number"><a href="../..//__filesource/fsource_XTemplate_CachingXTemplate_caching_xtemplate.class.php.html#a284">284</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Write out whole template cache file</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			write_template_cache
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../XTemplate/XTemplate.html">XTemplate</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#method__construct">XTemplate::__construct()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#methodXTemplate">XTemplate::XTemplate()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#methodarray_loop">XTemplate::array_loop()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#methodassign">XTemplate::assign()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#methodassign_file">XTemplate::assign_file()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#methodclear_autoreset">XTemplate::clear_autoreset()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#methodget_error">XTemplate::get_error()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#methodinsert_loop">XTemplate::insert_loop()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#methodout">XTemplate::out()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#methodout_file">XTemplate::out_file()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#methodparse">XTemplate::parse()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#methodparsed">XTemplate::parsed()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#methodreset">XTemplate::reset()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#methodrestart">XTemplate::restart()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#methodrparse">XTemplate::rparse()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#methodscan_globals">XTemplate::scan_globals()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#methodSetNullBlock">XTemplate::SetNullBlock()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#methodSetNullString">XTemplate::SetNullString()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#methodsetup">XTemplate::setup()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#methodset_autoreset">XTemplate::set_autoreset()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#methodset_null_block">XTemplate::set_null_block()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#methodset_null_string">XTemplate::set_null_string()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#methodtext">XTemplate::text()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#method_getfile">XTemplate::_getfile()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#method_maketree">XTemplate::_maketree()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#method_r_getfile">XTemplate::_r_getfile()</a></span><br>
+													<span class="method-name"><a href="../../XTemplate/XTemplate.html#method_store_filevar_parents">XTemplate::_store_filevar_parents()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Tue, 29 May 2007 19:29:32 +0100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.0RC3</a>
+	</p>
+	</div></body>
+</html>

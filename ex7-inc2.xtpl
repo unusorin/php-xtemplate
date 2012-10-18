@@ -1,0 +1,5 @@
+<!-- $HeadURL: https://xtpl.svn.sourceforge.net/svnroot/xtpl/trunk/ex7-inc2.xtpl $
+$Id: ex7-inc2.xtpl 16 2007-01-11 03:02:49Z cocomp $ -->
+<!-- BEGIN: block -->
+this is <b>ex7-inc2.xtpl</b>, and we're inside the <b>block</b> block, to which you refer as <b>main.inc.block</b> from your php.
+<!-- END: block -->

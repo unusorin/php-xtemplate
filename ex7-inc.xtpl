@@ -1,0 +1,3 @@
+<!-- $HeadURL: https://xtpl.svn.sourceforge.net/svnroot/xtpl/trunk/ex7-inc.xtpl $
+$Id: ex7-inc.xtpl 16 2007-01-11 03:02:49Z cocomp $ -->
+this text comes from <b>{FILENAME}</b>!

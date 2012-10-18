@@ -1,0 +1,2043 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class XTemplate</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class XTemplate</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">XTemplate PHP templating engine</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> PHP 5</li>
+				<li><span class="field">link:</span> $HeadURL:</li>
+				<li><span class="field">version:</span> <p>$Id: xtemplate.class.php 21 2007-05-29 18:01:15Z cocomp $</p><p>XTemplate class - http://www.phpxtemplate.org/ (x)html / xml generation with templates - fast &amp; easy  Latest stable &amp; Subversion versions available @ http://sourceforge.net/projects/xtpl/  License: LGPL / BSD - see license.txt  Changelog: see changelog.txt</p></li>
+				<li><span class="field">see:</span> license.txt LGPL / BSD license</li>
+				<li><span class="field">copyright:</span> Barnabas Debreceni 2000-2001</li>
+				<li><span class="field">author:</span> Barnabas Debreceni [cranx@users.sourceforge.net]</li>
+				<li><span class="field">copyright:</span> Jeremy Coates 2002-2007</li>
+				<li><span class="field">author:</span> Jeremy Coates [cocomp@users.sourceforge.net]</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_xtpl_xtemplate_class_php.html">/xtemplate.class.php</a> (line <span class="field"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a25">25</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../XTemplate/CachingXTemplate/CachingXTemplate.html">CachingXTemplate</a></td>
+					<td>
+											CachingXTemplate  Extension to XTemplate to provide block level and whole template caching facilities  Needs Web server writable directory
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$blocks" title="details" class="var-name">$blocks</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$block_end_delim" title="details" class="var-name">$block_end_delim</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$block_end_word" title="details" class="var-name">$block_end_word</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$block_parse_order" title="details" class="var-name">$block_parse_order</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$block_start_delim" title="details" class="var-name">$block_start_delim</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$block_start_word" title="details" class="var-name">$block_start_word</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$comment_preg" title="details" class="var-name">$comment_preg</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">boolean</span>
+					<a href="#$debug" title="details" class="var-name">$debug</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$filecache" title="details" class="var-name">$filecache</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$filecontents" title="details" class="var-name">$filecontents</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$filename" title="details" class="var-name">$filename</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">null</span>
+					<a href="#$files" title="details" class="var-name">$files</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$filevars" title="details" class="var-name">$filevars</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$filevar_delim" title="details" class="var-name">$filevar_delim</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$filevar_delim_nl" title="details" class="var-name">$filevar_delim_nl</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$filevar_parent" title="details" class="var-name">$filevar_parent</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$file_delim" title="details" class="var-name">$file_delim</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$mainblock" title="details" class="var-name">$mainblock</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$output_type" title="details" class="var-name">$output_type</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">unknown_type</span>
+					<a href="#$parsed_blocks" title="details" class="var-name">$parsed_blocks</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$preparsed_blocks" title="details" class="var-name">$preparsed_blocks</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$sub_blocks" title="details" class="var-name">$sub_blocks</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$tag_end_delim" title="details" class="var-name">$tag_end_delim</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$tag_start_delim" title="details" class="var-name">$tag_start_delim</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$tpldir" title="details" class="var-name">$tpldir</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$vars" title="details" class="var-name">$vars</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">boolean</span>
+					<a href="#$_autoreset" title="details" class="var-name">$_autoreset</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$_error" title="details" class="var-name">$_error</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">boolean</span>
+					<a href="#$_ignore_missing_blocks" title="details" class="var-name">$_ignore_missing_blocks</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_null_block" title="details" class="var-name">$_null_block</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_null_string" title="details" class="var-name">$_null_string</a>
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+								
+				<div class="method-definition">
+											<span class="method-result"><a href="../XTemplate/XTemplate.html">XTemplate</a></span>
+										<a href="#XTemplate" title="details" class="method-name">XTemplate</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>, [<span class="var-type">string/array</span>&nbsp;<span class="var-name">$tpldir</span> = <span class="var-default">''</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$files</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$mainblock</span> = <span class="var-default">'main'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$autosetup</span> = <span class="var-default">true</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result"><a href="../XTemplate/XTemplate.html">XTemplate</a></span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>, [<span class="var-type">string/array</span>&nbsp;<span class="var-name">$tpldir</span> = <span class="var-default">''</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$files</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$mainblock</span> = <span class="var-default">'main'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$autosetup</span> = <span class="var-default">true</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#array_loop" title="details" class="method-name">array_loop</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$var</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">&$values</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#assign" title="details" class="method-name">assign</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$val</span> = <span class="var-default">''</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$reset_array</span> = <span class="var-default">true</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#assign_file" title="details" class="method-name">assign_file</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$val</span> = <span class="var-default">''</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#clear_autoreset" title="details" class="method-name">clear_autoreset</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#get_error" title="details" class="method-name">get_error</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#insert_loop" title="details" class="method-name">insert_loop</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$var</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">''</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#out" title="details" class="method-name">out</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#out_file" title="details" class="method-name">out_file</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$fname</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#parse" title="details" class="method-name">parse</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#parsed" title="details" class="method-name">parsed</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#reset" title="details" class="method-name">reset</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#restart" title="details" class="method-name">restart</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>, [<span class="var-type">string/array</span>&nbsp;<span class="var-name">$tpldir</span> = <span class="var-default">''</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$files</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$mainblock</span> = <span class="var-default">'main'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$autosetup</span> = <span class="var-default">true</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$tag_start</span> = <span class="var-default">'{'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$tag_end</span> = <span class="var-default">'}'</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#rparse" title="details" class="method-name">rparse</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#scan_globals" title="details" class="method-name">scan_globals</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#SetNullBlock" title="details" class="method-name">SetNullBlock</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span> = <span class="var-default">''</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#SetNullString" title="details" class="method-name">SetNullString</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$varname</span> = <span class="var-default">''</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setup" title="details" class="method-name">setup</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$add_outer</span> = <span class="var-default">false</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_autoreset" title="details" class="method-name">set_autoreset</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_null_block" title="details" class="method-name">set_null_block</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span> = <span class="var-default">''</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_null_string" title="details" class="method-name">set_null_string</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$varname</span> = <span class="var-default">''</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#text" title="details" class="method-name">text</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span> = <span class="var-default">''</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#_getfile" title="details" class="method-name">_getfile</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_maketree" title="details" class="method-name">_maketree</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$con</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$parentblock</span> = <span class="var-default">''</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#_r_getfile" title="details" class="method-name">_r_getfile</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#_store_filevar_parents" title="details" class="method-name">_store_filevar_parents</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$blocks</span>)
+									</div>
+							</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$blocks" id="$blocks"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$blocks</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a45">45</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Unparsed blocks</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$block_end_delim" id="$block_end_delim"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$block_end_delim</span>
+			 = <span class="var-default"> '--&gt;'</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a182">182</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Template block end delimiter</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$block_end_word" id="$block_end_word"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$block_end_word</span>
+			 = <span class="var-default"> 'END:'</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a202">202</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Template block end word</p>
+<p class="description"><p>The last 3 properties and this make the delimiters look like:</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">example:</span> example not found</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$block_parse_order" id="$block_parse_order"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$block_parse_order</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a69">69</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Block parsing order for recursive parsing  (Sometimes reverse :)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$block_start_delim" id="$block_start_delim"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$block_start_delim</span>
+			 = <span class="var-default"> '&lt;!-- '</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a174">174</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Template block start delimiter</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$block_start_word" id="$block_start_word"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$block_start_word</span>
+			 = <span class="var-default"> 'BEGIN:'</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a190">190</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Template block start word</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$comment_preg" id="$comment_preg"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$comment_preg</span>
+			 = <span class="var-default"> '( ?#.*?)?'</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a240">240</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Regular expression element for comments within tags and blocks</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">example:</span> example not found</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$debug" id="$debug"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$debug</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a264">264</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Debug mode</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$filecache" id="$filecache"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$filecache</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a111">111</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">File caching during duration of script  e.g. files only cached to speed {FILE &quot;filename&quot;} repeats</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$filecontents" id="$filecontents"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$filecontents</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a37">37</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Raw contents of the template file</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$filename" id="$filename"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$filename</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a135">135</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Template filename</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$files" id="$files"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">null</span>
+			<span class="var-name">$files</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a127">127</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Filenames lookup table</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$filevars" id="$filevars"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$filevars</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a94">94</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">File variables array</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$filevar_delim" id="$filevar_delim"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$filevar_delim</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a156">156</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">RegEx for file include variable</p>
+<p class="description"><p>&quot;/\{FILE\s*\{([A-Za-z0-9\._]+?)\}\s*\}/m&quot;;</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$filevar_delim_nl" id="$filevar_delim_nl"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$filevar_delim_nl</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a166">166</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">RegEx for file includes with newlines</p>
+<p class="description"><p>&quot;/^\s*\{FILE\s*\{([A-Za-z0-9\._]+?)\}\s*\}\s*\n/m&quot;;</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$filevar_parent" id="$filevar_parent"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$filevar_parent</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a102">102</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Filevars' parent block</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$file_delim" id="$file_delim"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$file_delim</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a146">146</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">RegEx for file includes</p>
+<p class="description"><p>&quot;/\{FILE\s*\&quot;([^\&quot;]+)\&quot;\s*\}/m&quot;;</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$mainblock" id="$mainblock"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$mainblock</span>
+			 = <span class="var-default"> 'main'</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a248">248</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Default main template block name</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$output_type" id="$output_type"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$output_type</span>
+			 = <span class="var-default"> 'HTML'</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a256">256</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Script output type</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$parsed_blocks" id="$parsed_blocks"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">unknown_type</span>
+			<span class="var-name">$parsed_blocks</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a52">52</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Parsed blocks</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$preparsed_blocks" id="$preparsed_blocks"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$preparsed_blocks</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a60">60</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Preparsed blocks (for file includes)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$sub_blocks" id="$sub_blocks"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$sub_blocks</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a78">78</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Store sub-block names  (For fast resetting)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$tag_end_delim" id="$tag_end_delim"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$tag_end_delim</span>
+			 = <span class="var-default"> '}'</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a226">226</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Template tag end delimiter</p>
+<p class="description"><p>This makes the delimiters look like:</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">example:</span> example not found</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$tag_start_delim" id="$tag_start_delim"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$tag_start_delim</span>
+			 = <span class="var-default"> '{'</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a214">214</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Template tag start delimiter</p>
+<p class="description"><p>This makes the delimiters look like:</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">example:</span> example not found</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$tpldir" id="$tpldir"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$tpldir</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a119">119</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Location of template files</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$vars" id="$vars"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$vars</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a86">86</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Variables array</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_autoreset" id="$_autoreset"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$_autoreset</span>
+			 = <span class="var-default"> true</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a296">296</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Auto-reset sub blocks</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_error" id="$_error"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_error</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a288">288</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Errors</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_ignore_missing_blocks" id="$_ignore_missing_blocks"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$_ignore_missing_blocks</span>
+			 = <span class="var-default"> true</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a306">306</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set to FALSE to generate errors if a non-existant blocks is referenced</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+				<li><span class="field">since:</span> 2002/10/17</li>
+				<li><span class="field">author:</span> NW</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_null_block" id="$_null_block"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_null_block</span>
+			 = <span class="var-default">array('' =&gt; '')</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a280">280</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Null string for unassigned blocks</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_null_string" id="$_null_string"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_null_string</span>
+			 = <span class="var-default">array('' =&gt; '')</span>			(line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a272">272</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Null string for unassigned vars</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodXTemplate" id="XTemplate"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor XTemplate</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a334">334</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">PHP 4 Constructor - Instantiate the object</p>
+	<ul class="tags">
+				<li><span class="field">usedby:</span> <a href="../XTemplate/CachingXTemplate/CachingXTemplate.html">CachingXTemplate</a></li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">deprecated:</span> Use PHP 5 constructor instead</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../XTemplate/XTemplate.html">XTemplate</a></span>
+		<span class="method-name">
+			XTemplate
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>, [<span class="var-type">string/array</span>&nbsp;<span class="var-name">$tpldir</span> = <span class="var-default">''</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$files</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$mainblock</span> = <span class="var-default">'main'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$autosetup</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$file</span><span class="var-description">: Template file to work on</span>			</li>
+					<li>
+				<span class="var-type">string/array</span>
+				<span class="var-name">$tpldir</span><span class="var-description">: Location of template files (useful for keeping files outside web server root)</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$files</span><span class="var-description">: Filenames lookup</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mainblock</span><span class="var-description">: Name of main block in the template</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$autosetup</span><span class="var-description">: If true, run setup() as part of constuctor</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a318">318</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">PHP 5 Constructor - Instantiate the object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../XTemplate/XTemplate.html">XTemplate</a></span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>, [<span class="var-type">string/array</span>&nbsp;<span class="var-name">$tpldir</span> = <span class="var-default">''</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$files</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$mainblock</span> = <span class="var-default">'main'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$autosetup</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$file</span><span class="var-description">: Template file to work on</span>			</li>
+					<li>
+				<span class="var-type">string/array</span>
+				<span class="var-name">$tpldir</span><span class="var-description">: Location of template files (useful for keeping files outside web server root)</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$files</span><span class="var-description">: Filenames lookup</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mainblock</span><span class="var-description">: Name of main block in the template</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$autosetup</span><span class="var-description">: If true, run setup() as part of constuctor</span>			</li>
+				</ul>
+		
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../XTemplate/CachingXTemplate/CachingXTemplate.html#method__construct">CachingXTemplate::__construct()</a>
+								: Override of parent constructor
+							</li>
+				</ul>
+	</div>
+<a name="methodarray_loop" id="array_loop"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">array_loop</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a742">742</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">parses a block for every set of data in the values array</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			array_loop
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$var</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">&$values</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$bname</span><span class="var-description">: Block name to loop</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$var</span><span class="var-description">: Variable to assign values to</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$values</span><span class="var-description">: Values to assign to $var</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodassign" id="assign"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">assign</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a464">464</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">assign a variable</p>
+	<ul class="tags">
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">example:</span> example not found</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			assign
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$val</span> = <span class="var-default">''</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$reset_array</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Variable to assign $val to</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$reset_array</span><span class="var-description">: Reset the variable array if $val is an array</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$val</span><span class="var-description">: / array $val Value to assign to $name</span>			</li>
+				</ul>
+		
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../XTemplate/CachingXTemplate/CachingXTemplate.html#methodassign">CachingXTemplate::assign()</a>
+								: Override of parent assign method
+							</li>
+				</ul>
+	</div>
+<a name="methodassign_file" id="assign_file"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">assign_file</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a497">497</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">assign a file variable</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			assign_file
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$val</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Variable to assign $val to</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$val</span><span class="var-description">: / array $val Values to assign to $name</span>			</li>
+				</ul>
+		
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../XTemplate/CachingXTemplate/CachingXTemplate.html#methodassign_file">CachingXTemplate::assign_file()</a>
+								: Override of parent assign_file method
+							</li>
+				</ul>
+	</div>
+<a name="methodclear_autoreset" id="clear_autoreset"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">clear_autoreset</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a897">897</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">sets AUTORESET to 0. (default is 1)  if set to 1, parse() automatically resets the parsed blocks' sub blocks  (for multiple level blocks)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			clear_autoreset
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_error" id="get_error"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_error</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a929">929</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">gets error condition / string</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> / string</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			get_error
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodinsert_loop" id="insert_loop"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">insert_loop</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a728">728</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">inserts a loop ( call assign &amp; parse )</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			insert_loop
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$var</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$bname</span><span class="var-description">: Block name to assign</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$var</span><span class="var-description">: Variable to assign values to</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: / array $value Value to assign to $var</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodout" id="out"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">out</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a783">783</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">prints the parsed text</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			out
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$bname</span><span class="var-description">: Block name to echo out</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodout_file" id="out_file"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">out_file</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a799">799</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">prints the parsed text to a specified file</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			out_file
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$fname</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$bname</span><span class="var-description">: Block name to write out</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fname</span><span class="var-description">: File name to write to</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodparse" id="parse"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">parse</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a517">517</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">parse a block</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			parse
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$bname</span><span class="var-description">: Block name to parse</span>			</li>
+				</ul>
+		
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../XTemplate/CachingXTemplate/CachingXTemplate.html#methodparse">CachingXTemplate::parse()</a>
+								: Override of parent parse method
+							</li>
+				</ul>
+	</div>
+<a name="methodparsed" id="parsed"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">parsed</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a827">827</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">returns true if block was parsed, false if not</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			parsed
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$bname</span><span class="var-description">: Block name to test</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodreset" id="reset"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">reset</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a815">815</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">resets the parsed text</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			reset
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$bname</span><span class="var-description">: Block to reset</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodrestart" id="restart"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">restart</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a362">362</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Restart the class - allows one instantiation with several files processed by restarting</p>
+<p class="description"><p>e.g. $xtpl = new XTemplate('file1.xtpl');  $xtpl-&gt;parse('main');  $xtpl-&gt;out('main');  $xtpl-&gt;restart('file2.xtpl');  $xtpl-&gt;parse('main');  $xtpl-&gt;out('main');  (Added in response to sf:641407 feature request)</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			restart
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>, [<span class="var-type">string/array</span>&nbsp;<span class="var-name">$tpldir</span> = <span class="var-default">''</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$files</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$mainblock</span> = <span class="var-default">'main'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$autosetup</span> = <span class="var-default">true</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$tag_start</span> = <span class="var-default">'{'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$tag_end</span> = <span class="var-default">'}'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$file</span><span class="var-description">: Template file to work on</span>			</li>
+					<li>
+				<span class="var-type">string/array</span>
+				<span class="var-name">$tpldir</span><span class="var-description">: Location of template files</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$files</span><span class="var-description">: Filenames lookup</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mainblock</span><span class="var-description">: Name of main block in the template</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$autosetup</span><span class="var-description">: If true, run setup() as part of restarting</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$tag_start</span><span class="var-description">: {</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$tag_end</span><span class="var-description">: }</span>			</li>
+				</ul>
+		
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../XTemplate/CachingXTemplate/CachingXTemplate.html#methodrestart">CachingXTemplate::restart()</a>
+								: Override of parent restart method
+							</li>
+				</ul>
+	</div>
+<a name="methodrparse" id="rparse"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">rparse</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a703">703</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">returns the parsed text for a block, including all sub-blocks.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			rparse
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$bname</span><span class="var-description">: Block name to parse</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodscan_globals" id="scan_globals"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">scan_globals</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a907">907</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">scans global variables and assigns to PHP array</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			scan_globals
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodSetNullBlock" id="SetNullBlock"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">SetNullBlock</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a874">874</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Backwards compatibility only</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">deprecated:</span> Change to set_null_block to keep in with rest of naming convention</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			SetNullBlock
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$bname</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodSetNullString" id="SetNullString"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">SetNullString</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a851">851</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Backwards compatibility only</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">deprecated:</span> Change to set_null_string to keep in with rest of naming convention</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			SetNullString
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$varname</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$varname</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodsetup" id="setup"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setup</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a407">407</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">setup - the elements that were previously in the constructor</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setup
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$add_outer</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$add_outer</span><span class="var-description">: If true is passed when called, it adds an outer main block to the file</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodset_autoreset" id="set_autoreset"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_autoreset</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a885">885</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">sets AUTORESET to 1. (default is 1)  if set to 1, parse() automatically resets the parsed blocks' sub blocks  (for multiple level blocks)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_autoreset
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodset_null_block" id="set_null_block"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_null_block</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a862">862</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">sets the string to replace in case the block was not parsed</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_null_block
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: Display string for null block</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$bname</span><span class="var-description">: Block name to apply $str to</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodset_null_string" id="set_null_string"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_null_string</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a839">839</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">sets the string to replace in case the var was not assigned</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_null_string
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$varname</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: Display string for null block</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$varname</span><span class="var-description">: Variable name to apply $str to</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodtext" id="text"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">text</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a760">760</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">returns the parsed text for a block</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			text
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$bname</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$bname</span><span class="var-description">: Block name to return</span>			</li>
+				</ul>
+		
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../XTemplate/CachingXTemplate/CachingXTemplate.html#methodtext">CachingXTemplate::text()</a>
+								: Override of parent text method
+							</li>
+				</ul>
+	</div>
+<a name="method_getfile" id="_getfile"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_getfile</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a1149">1149</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">returns the contents of a file</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			_getfile
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$file</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="method_maketree" id="_maketree"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_maketree</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a964">964</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">generates the array containing to-be-parsed stuff:  $blocks[&quot;main&quot;],$blocks[&quot;main.table&quot;],$blocks[&quot;main.table.row&quot;], etc.</p>
+<p class="description"><p>also builds the reverse parse order.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_maketree
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$con</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$parentblock</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$con</span><span class="var-description">: content to be processed</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$parentblock</span><span class="var-description">: name of the parent block in the block hierarchy</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="method_r_getfile" id="_r_getfile"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_r_getfile</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a1258">1258</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">recursively gets the content of a file with {FILE &quot;filename.tpl&quot;} directives</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			_r_getfile
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$file</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="method_store_filevar_parents" id="_store_filevar_parents"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_store_filevar_parents</span> (line <span class="line-number"><a href="..//__filesource/fsource_XTemplate__xtemplate.class.php.html#a1110">1110</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">store container block's name for file variables</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			_store_filevar_parents
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$blocks</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$blocks</span>			</li>
+				</ul>
+		
+		
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Tue, 29 May 2007 19:29:36 +0100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.0RC3</a>
+	</p>
+	</div></body>
+</html>
